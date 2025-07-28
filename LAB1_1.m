@@ -1,0 +1,16 @@
+n=0:15; 
+u=[(n)>=0];
+u5=[(n-5)>=0];  
+a5=5*u; 
+xn=u-u5;
+xr=n.*u; 
+subplot(3,2,1);
+stem(n,u); 
+title('Unit-step function');
+ylabel('Amplitude');
+subplot(3,2,2); stem(n,u5); title('Delayed unit-step function');
+subplot(3,2,3); stem(n,a5); title('Amplitude scaled step function');
+ylabel('Amplitude'); xlabel('n ---->');
+subplot(324); stem(n,xn); title('Window function '); xlabel('n ---->');
+subplot(325); stem(n,xr); title('Ramp Function'); 
+ylabel('Amplitude'); xlabel('n ---->');
