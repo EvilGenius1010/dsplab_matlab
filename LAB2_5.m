@@ -52,3 +52,4 @@ figure;
 stem(n_pos, y, 'filled');
 title('Output y[n] for x[n] = 3sin(nπ/3)u[n]');
 xlabel('n'); ylabel('y[n]');
+        
